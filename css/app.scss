@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.2%;
+}
+
+//variables
+$primaryBlue: #185adb;
+
+header {
+  height: 100vh;
+  width: 100vw;
+  background: $primaryBlue;
+
+  nav {
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    .logo {
+      height: 10vh;
+      width: 20%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      img {
+        height: 90%;
+        width: 70%;
+      }
+    }
+    ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 40%;
+      margin-right: 10%;
+      font-family: Fredoka One;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 2rem;
+      line-height: 36px;
+      color: #fff;
+
+      li {
+        list-style-type: none;
+
+        a {
+          text-decoration: none;
+          color: #fff;
+          padding: 15% 20%;
+          transition: 0.3s ease-in-out;
+          &:hover {
+            background-color: #fd3a69;
+            color: white;
+            border-radius: 50px;
+          }
+          &:active{
+            background-color: #fd3a69;
+            color: white;
+            border-radius: 50px;            
+          }
+        }
+      }
+    }
+    .burger {
+      display: none;
+    }
+  }
+
+  .portfolio {
+    width: 100vw;
+    height: 90vh;
+    .row {
+      height: 100%;
+      width: 100vw;
+      .text {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         h1{
+          font-family: Bebas Neue;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 8rem;
+          line-height: 9rem;
+          color: #f9f9f9;
+          text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+          margin-right: 20%;
+         }
+         h4{
+          font-family: Fredoka One;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 3rem;
+          line-height: 3rem;
+          color: #F9F9F9;   
+          margin-right: 10%;       
+         }
+         .status{
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            width: 65%;
+            margin-top: 5%;
+            padding: 0% 0%;
+            cursor: pointer;
+         }
+      }
+      .illustration {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg{
+          height: 80%;
+          width: 90%;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+//mobile
+@media screen and (min-width : 200px) and (max-width : 767.98px) {
+  header{
+
+    overflow: hidden;
+    display: block;
+
+    nav{
+ 
+      width: 90vw;
+      overflow: hidden;
+
+      .logo{
+       width: 80%;
+       padding: 0;
+        img{
+          height: 100%;
+          width: 80%;
+          padding: 0;
+        }
+
+      }
+
+      ul{
+
+        display: none;
+
+         li{
+
+
+            a{
+
+
+            }
+
+         }
+
+      }
+
+      .burger{
+        display: block;
+        width: 20%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+    }
+
+    .portfolio{
+
+      .row{
+
+         flex-direction: column-reverse;
+
+        .text{
+          
+          
+          height: 50vh;
+
+           h1{
+             font-size: 6rem;
+           }
+
+           h4{
+             font-size: 2rem;
+             padding: 0%  0% 5% 0%;
+             line-height: 3rem;
+           }
+
+           .status{
+             width: 30%;
+           }
+
+        }
+
+        .illustration{
+
+                height: 35vh;
+
+                svg{
+                  height: 100%;
+                  margin-left: 10%;
+                }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}

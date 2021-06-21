@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.2%;
+}
+
+header {
+  height: 100vh;
+  width: 100vw;
+  background: #185adb;
+}
+
+header nav {
+  height: 10vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header nav .logo {
+  height: 10vh;
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+header nav .logo img {
+  height: 90%;
+  width: 70%;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+  margin-right: 10%;
+  font-family: Fredoka One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2rem;
+  line-height: 36px;
+  color: #fff;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 15% 20%;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+  background-color: #fd3a69;
+  color: white;
+  border-radius: 50px;
+}
+
+header nav ul li a:active {
+  background-color: #fd3a69;
+  color: white;
+  border-radius: 50px;
+}
+
+header nav .burger {
+  display: none;
+}
+
+header .portfolio {
+  width: 100vw;
+  height: 90vh;
+}
+
+header .portfolio .row {
+  height: 100%;
+  width: 100vw;
+}
+
+header .portfolio .row .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .portfolio .row .text h1 {
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 8rem;
+  line-height: 9rem;
+  color: #f9f9f9;
+  text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+  margin-right: 20%;
+}
+
+header .portfolio .row .text h4 {
+  font-family: Fredoka One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3rem;
+  line-height: 3rem;
+  color: #F9F9F9;
+  margin-right: 10%;
+}
+
+header .portfolio .row .text .status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 65%;
+  margin-top: 5%;
+  padding: 0% 0%;
+  cursor: pointer;
+}
+
+header .portfolio .row .illustration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .portfolio .row .illustration svg {
+  height: 80%;
+  width: 90%;
+}
+
+@media screen and (min-width: 200px) and (max-width: 767.98px) {
+  header {
+    overflow: hidden;
+    display: block;
+  }
+  header nav {
+    width: 90vw;
+    overflow: hidden;
+  }
+  header nav .logo {
+    width: 80%;
+    padding: 0;
+  }
+  header nav .logo img {
+    height: 100%;
+    width: 80%;
+    padding: 0;
+  }
+  header nav ul {
+    display: none;
+  }
+  header nav .burger {
+    display: block;
+    width: 20%;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .portfolio .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  header .portfolio .row .text {
+    height: 50vh;
+  }
+  header .portfolio .row .text h1 {
+    font-size: 6rem;
+  }
+  header .portfolio .row .text h4 {
+    font-size: 2rem;
+    padding: 0%  0% 5% 0%;
+    line-height: 3rem;
+  }
+  header .portfolio .row .text .status {
+    width: 30%;
+  }
+  header .portfolio .row .illustration {
+    height: 35vh;
+  }
+  header .portfolio .row .illustration svg {
+    height: 100%;
+    margin-left: 10%;
+  }
+}
+/*# sourceMappingURL=app.css.map */
